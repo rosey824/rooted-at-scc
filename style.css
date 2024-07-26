@@ -268,3 +268,7 @@ a {
     background-color: white; /* Optional: to ensure the footer has a background */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: to give a slight shadow */
 }
+
+.footer p {
+    margin: 0.5rem; /* Remove margin */
+}
