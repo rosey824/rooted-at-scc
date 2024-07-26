@@ -142,7 +142,7 @@ nav ul li a:hover {
     background-color: rgb(109, 105, 101);
 }
 
-/* about, about rooted section styles */
+/* about page, about rooted section styles */
 
 .mission {
     text-align: center;
@@ -154,7 +154,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* About, meet the team section styles */
+/* about page, meet the team section styles */
 
 
 .contact {
@@ -216,4 +216,9 @@ nav ul li a:hover {
 
 .footer {
     text-align:center;
+    padding: 1;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
