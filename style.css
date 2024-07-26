@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+ /* join today page, form section styles */
 
 .contact-form {
     background: #fff;
@@ -50,6 +51,8 @@ button {
 button:hover {
     background-color: yellow;
 }
+
+/* header section styles */
 
 header {
     display: flex;
@@ -128,7 +131,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     margin-top: 20px;
     text-size-adjust: 30px;
-    background-color: rgb(112, 58, 0);
+    background-color: black;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -136,10 +139,24 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #ff4a3b;
+    background-color: rgb(109, 105, 101);
 }
 
-/* Contact section styles */
+/* about, about rooted section styles */
+
+.mission {
+    text-align: center;
+    padding: 50px;
+}
+
+.mission-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* About, meet the team section styles */
+
+
 .contact {
     padding: 40px;
     background-color: #f9f9f9;
@@ -195,6 +212,7 @@ nav ul li a:hover {
     color: #666;
 }
 
+/* Footer section styles */
 
 .footer {
     text-align:center;
