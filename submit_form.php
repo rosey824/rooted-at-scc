@@ -1,4 +1,9 @@
 <?php
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and retrieve form data
     $name = htmlspecialchars($_POST['name']);
@@ -6,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
 
     // Define the recipient email addresses
-    $to = "erose@scciowa.edu"; // Replace with actual email addresses ADD MARIAH EMAIL AFTER TEST!!
+    $to = "erose@scciowa.edu"; // Replace with actual email addresses
 
     // Define the email subject
     $subject = "New Rooted Contact Form Submission";
@@ -28,4 +33,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Invalid request method.";
 }
-?>
