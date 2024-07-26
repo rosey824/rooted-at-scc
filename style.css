@@ -160,14 +160,36 @@ nav ul li a:hover {
 }
 
 .app-logo {
-    width: 150px; /* Set the desired width */
+    width: 300px; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
     margin: 10px; /* Add some space around each image */
 }
 
+/* or read the bible online text */ 
+
+.link-text {
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some top margin */
+    text-decoration: none; /* Remove underline */
+    color:#000; /* Set text color */
+    font-size: 15px; /* Set font size */
+}
+
+.link-text svg {
+    vertical-align: middle; /* Align the SVG icon with the text */
+    margin-left: 5px; /* Add some space between text and icon */
+}
+
+.link-text:hover {
+    color: #7c4d0f; /* Change text color on hover */
+}
+
+a {
+    text-decoration: none;
+} /* no line under logo links*/
 
 /* about page, meet the team section styles */
-
 
 .contact {
     padding: 40px;
@@ -222,6 +244,12 @@ nav ul li a:hover {
 .contact-card p {
     margin: 5px 0;
     color: #666;
+}
+
+/* resources page */
+
+.meeting-header {
+    text-align: center;
 }
 
 /* Footer section styles */
