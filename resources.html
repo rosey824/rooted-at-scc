@@ -4,66 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooted at SCC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="imgs/rootedlogo.png" alt="Rooted Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="jointoday.html">Join Today</a></li>
-            </ul>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/rootedlogo.png" alt="Rooted Logo" class="img-fluid" style="max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jointoday.html">Join</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container mt-5">
         <!-- Main content goes here -->
-        <section class="meeting">
-            <div class="meeting-header">
+        <section class="meeting mb-5">
+            <div class="text-center">
                 <h2>Club Meetings</h2>
                 <p>Rooted meets the first Wednesday of every month from 6:00 pm CST - 7:30 pm CST.</p>
             </div>
         </section>
-        <section class="meeting">
-            <div class="meeting-dates">
+        <section class="meeting mb-5">
+            <div class="text-center">
+                <h3>Meeting Dates</h3>
                 <p>September 4th</p>
                 <p>October 2nd</p>
                 <p>November 6th</p>
                 <p>December 4th</p>
-                <p>Feburary 5th</p>
+                <p>February 5th</p>
                 <p>March 5th</p>
                 <p>April 2nd</p>
             </div>
         </section>
-        <section class="app-links">
+        <section class="app-links mb-5 text-center">
             <h2>Get the Bible App for:</h2>
-            <div class="app-links">
-                <a href="https://apps.apple.com/us/app/bible/id282935706?_branch_match_id=1319362347878887506&utm_source=Bible.com&utm_campaign=Quick+Link+-+App+Page+-+iOS&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdDPziwEZjbwoHQAAAA%3D%3D" target="_blank">
-                    <img src="imgs/app-store.png" alt="ios bible app" class="app-logo">   
+            <div class="d-flex justify-content-center my-3">
+                <a href="https://apps.apple.com/us/app/bible/id282935706?_branch_match_id=1319362347878887506&utm_source=Bible.com&utm_campaign=Quick+Link+-+App+Page+-+iOS&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdDPziwEZjbwoHQAAAA%3D%3D" target="_blank" class="mx-3">
+                    <img src="imgs/app-store.png" alt="ios bible app" class="app-logo">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android&_branch_match_id=1319362347878887506&utm_source=Bible.com&utm_campaign=Quick%20Link%20-%20App%20Page%20-%20Android&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdBPzUoryM1MAYUFTziEAAAA%3D" target="_blank">
-                    <img src="imgs/google-play.png" alt="android bible app" class="app-logo">   
+                <a href="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android&_branch_match_id=1319362347878887506&utm_source=Bible.com&utm_campaign=Quick%20Link%20-%20App%20Page%20-%20Android&utm_medium=quick-link&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0EvKTMpJ1UvOzwXxdBPzUoryM1MAYUFTziEAAAA%3D" target="_blank" class="mx-3">
+                    <img src="imgs/google-play.png" alt="android bible app" class="app-logo">
                 </a>
-                </div>
-                <a href="https://www.bible.com/bible/59/GEN.1.ESV" 
-                class="link-text" target="_blank">Or Read the Bible Online <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            </div>
+            <a href="https://www.bible.com/bible/59/GEN.1.ESV" class="link-text d-block mt-3" target="_blank">Or Read the Bible Online
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
-                  </svg>
-                  </a>
+                </svg>
+            </a>
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer bg-white text-center py-3 shadow-sm">
         <div class="container">
-                <div class="footer-bottom">
-                <p>&copy; 2024 Emma Rose. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+            <p class="mb-0">&copy; 2024 Emma Rose. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

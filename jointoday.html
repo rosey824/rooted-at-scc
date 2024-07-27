@@ -4,36 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooted at SCC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .join-form {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .embed-responsive {
+            flex: 1;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="imgs/rootedlogo.png" alt="Rooted Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="jointoday.html">Join Today</a></li>
-            </ul>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/rootedlogo.png" alt="Rooted Logo" class="img-fluid" style="max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="jointoday.html" class="nav-link">Join</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="join-form">
-            <iframe width="1440px" height="1040px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=9tVI2fICJUiMz_QiosFUI1A14OKnq9JAgdvRHOZqCdtUNUE5UDFOMTdRRzI5QlFXOFgxUjFCSEpQRC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" 
-            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    <main class="container-fluid p-0 mt-5">
+        <section class="join-form text-center">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://forms.office.com/Pages/ResponsePage.aspx?id=9tVI2fICJUiMz_QiosFUI1A14OKnq9JAgdvRHOZqCdtUNUE5UDFOMTdRRzI5QlFXOFgxUjFCSEpQRC4u&embed=true" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer bg-white text-center py-3 shadow-sm mt-auto">
         <div class="container">
-                <div class="footer-bottom">
-                <p>&copy; 2024 Emma Rose. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+            <p class="mb-0">&copy; 2024 Emma Rose. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

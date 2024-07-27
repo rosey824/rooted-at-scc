@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooted at SCC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="imgs/rootedlogo.png" alt="Rooted Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="jointoday.html">Join Today</a></li>
-            </ul>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light container">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/rootedlogo.png" alt="Rooted Logo" class="img-fluid" style="max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="jointoday.html" class="nav-link">Join</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Rooted in Faith, Growing Together</h1>
-            <p>Join us in fellowship and discipleship.</p>
-            <a href="jointoday.html" class="cta-button">Grow with us</a>
-        </div>
-    </section>
-
-    <main>
+    <main class="mt-5">
         <!-- Main content goes here -->
-    </main>
-    <footer class="footer">
-        <div class="container">
-                <div class="footer-bottom">
-                <p>&copy; 2024 Emma Rose. All rights reserved.</p>
+        <section class="hero text-white text-center d-flex align-items-center" style="height: 60vh; background: url('imgs/heropic2.jpg') no-repeat center center/cover;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Rooted in Faith, Growing Together</h1>
+                    <p>Join us in fellowship and discipleship.</p>
+                    <a href="jointoday.html" class="btn btn-dark">Grow with us</a>
                 </div>
             </div>
-        </footer>
+        </section>
+    </main>
+
+    <footer class="footer bg-white text-center py-3 shadow-sm mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Emma Rose. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
