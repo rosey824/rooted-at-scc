@@ -23,16 +23,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0;
+            margin: 0;
         }
-        .embed-responsive {
+        iframe {
             flex: 1;
             width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 <body>
     <header class="bg-white shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light container">
+        <nav class="navbar navbar-expand-md navbar-light container">
             <a class="navbar-brand" href="#">
                 <img src="imgs/rootedlogo.png" alt="Rooted Logo" class="img-fluid" style="max-width: 100px;">
             </a>
@@ -48,13 +52,16 @@
                 </ul>
             </div>
         </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <main class="container-fluid p-0">
         <section class="join-form text-center">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://forms.office.com/Pages/ResponsePage.aspx?id=9tVI2fICJUiMz_QiosFUI1A14OKnq9JAgdvRHOZqCdtUNUE5UDFOMTdRRzI5QlFXOFgxUjFCSEpQRC4u&embed=true" allowfullscreen></iframe>
-            </div>
+            <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=9tVI2fICJUiMz_QiosFUI1A14OKnq9JAgdvRHOZqCdtUNUE5UDFOMTdRRzI5QlFXOFgxUjFCSEpQRC4u&embed=true" allowfullscreen></iframe>
         </section>
     </main>
 
