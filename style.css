@@ -67,6 +67,7 @@ main {
     height: 250px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure the images cover the area */
     padding: 10px;
+    border-radius: 15px;
 }
 
 /*Resources Page CSS */
