@@ -9,6 +9,14 @@ main {
 }
 
 /*Nav Bar Page CSS */
+.nav-link:hover {
+    background-color: #603913; /* Brown background */
+    color: white !important; /* White text color */
+    padding: 5px 10px; /* Adjust padding to ensure the text stays centered */
+    border-radius: 5px; /* Optional: add some rounding to the corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
 @media (max-width: 767.98px) {
     .navbar-nav {
         width: 100%;
@@ -21,6 +29,19 @@ main {
     .navbar-nav .nav-link {
         display: block;
         width: 100%;
+    }
+    .navbar-nav .nav-link {
+        display: inline-block; /* Change from block to inline-block */
+        width: auto; /* Allow the link to wrap around the text content */
+        padding: 5px 10px; /* Adjust padding */
+    }
+
+    /* Mobile hover effect */
+    .navbar-nav .nav-link:hover {
+        background-color: #603913; /* Brown background */
+        color: white !important; /* White text color */
+        border-radius: 5px; /* Optional: add some rounding to the corners */
+        transition: all 0.3s ease-in-out; /* Smooth transition effect */
     }
 }
 
@@ -48,6 +69,41 @@ main {
 .hero-content {
     position: relative;
     z-index: 2;
+}
+
+/* Add keyframes and fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.5s;
+}
+
+.hero-content p {
+    animation-delay: 1s;
+}
+
+.hero-content a {
+    animation-delay: 1.5s;
+}
+
+/* Custom light-grey button */
+.btn-light-grey {
+    background-color: #d3d3d3; /* Light grey background */
+    color: black; /* Black text color */
+    border: none; /* No border */
+}
+
+.btn-light-grey:hover {
+    background-color: #c0c0c0; /* Slightly darker grey on hover */
+    color: black; /* Black text color */
 }
 
 /*About Page CSS */
