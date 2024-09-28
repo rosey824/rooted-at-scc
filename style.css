@@ -137,3 +137,11 @@ main {
     width: 150px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
 }
+
+.contact-img {
+    width: 100%;
+    height: auto; /* Ensure the image scales well */
+    max-width: 1080px; /* Set the maximum width */
+    max-height: 1080px; /* Set the maximum height */
+    object-fit: cover; /* Ensures the image fits within the square without distortion */
+}
