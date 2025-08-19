@@ -107,23 +107,11 @@ main {
 }
 
 /*About Page CSS */
-.full-height {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card {
-    border-radius: 15px; /* Customize the radius as needed */
-}
 
 .card-img-top {
     height: 250px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure the images cover the area */
-    padding: 20px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0; /* round top corners only */
 }
 
 /*Resources Page CSS */
