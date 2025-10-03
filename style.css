@@ -108,11 +108,79 @@ main {
 
 /*About Page CSS */
 
-.card-img-top {
-    height: 250px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensure the images cover the area */
-    border-radius: 15px 15px 0 0; /* round top corners only */
+/* Add subtle shadow and better spacing */
+.contact .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.contact .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Better image styling */
+.card-img-top {
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+    padding: 15px; /* Add padding around the image */
+    background-color: #fff;
+}
+
+/* Improve card body spacing */
+.contact .card-body {
+    padding: 1.5rem;
+}
+
+/* Style the name better */
+.contact .card-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Style the role */
+.contact .card-text:first-of-type {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Style contact links */
+.contact .card-text a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact .card-text a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Add spacing between contact items */
+.contact .card-text {
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        max-height: 280px;
+        padding: 10px;
+    }
+    
+    .contact .card-title {
+        font-size: 1.3rem;
+    }
+}
+
 
 /*Resources Page CSS */
 .content-wrapper {
